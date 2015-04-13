@@ -1,0 +1,1472 @@
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-12 18:04:47 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (11.8ms)
+Completed 200 OK in 132ms (Views: 107.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-12 18:06:42 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 22ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-12 18:11:46 -0500
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.1.8) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (47.9ms)
+  [1m[36m (76.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (15.6ms)[0m  select sqlite_version(*)
+  [1m[36m (78.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateZombies (20150412230824)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  CREATE TABLE "zombies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "bio" text, "age" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150412230824"]]
+  [1m[35m (78.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-12 18:12:44 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-12 18:12:46 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 18:13:03 -0500
+Processing by ZombiesController#index as HTML
+  [1m[35mZombie Load (0.0ms)[0m  SELECT "zombies".* FROM "zombies"
+  Rendered zombies/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 2207ms (Views: 2203.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 18:13:05 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 18:13:05 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 18:13:05 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 18:13:05 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 18:13:05 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 18:13:05 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 18:13:06 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 18:13:06 -0500
+
+
+Started GET "/zombies/new" for 127.0.0.1 at 2015-04-12 18:13:09 -0500
+Processing by ZombiesController#new as HTML
+  Rendered zombies/_form.html.erb (140.6ms)
+  Rendered zombies/new.html.erb within layouts/application (187.5ms)
+Completed 200 OK in 234ms (Views: 234.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/zombies" for 127.0.0.1 at 2015-04-12 18:13:28 -0500
+Processing by ZombiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BOD+xV914iltr/NHR9SqjbSMT+2dEkhcco3U6k87iJo=", "zombie"=>{"name"=>"cece", "bio"=>"super cool", "age"=>"28"}, "commit"=>"Create Zombie"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "zombies" ("age", "bio", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["age", 28], ["bio", "super cool"], ["created_at", "2015-04-12 23:13:28.495673"], ["name", "cece"], ["updated_at", "2015-04-12 23:13:28.495673"]]
+  [1m[36m (104.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/zombies/1
+Completed 302 Found in 171ms (ActiveRecord: 106.1ms)
+
+
+Started GET "/zombies/1" for 127.0.0.1 at 2015-04-12 18:13:28 -0500
+Processing by ZombiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mZombie Load (1.0ms)[0m  SELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered zombies/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 67ms (Views: 61.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 18:13:33 -0500
+Processing by ZombiesController#index as HTML
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT "zombies".* FROM "zombies"[0m
+  Rendered zombies/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "zombies" ("age", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["age", 33], ["created_at", "2015-04-12 23:17:21.238284"], ["name", "mike"], ["updated_at", "2015-04-12 23:17:21.238284"]]
+  [1m[36m (125.1ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 18:31:54 -0500
+Processing by ZombiesController#index as HTML
+  [1m[35mZombie Load (1.0ms)[0m  SELECT "zombies".* FROM "zombies"
+  Rendered zombies/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 64ms (Views: 63.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 18:31:54 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 18:31:54 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 18:31:54 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 18:31:54 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 18:31:54 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 18:31:54 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 18:31:54 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 18:31:54 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddEmailAndRottingToZombies (20150412233711)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (60.9ms)[0m  [1mALTER TABLE "zombies" ADD "email" varchar(255)[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "zombies" ADD "rotting" boolean
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150412233711"]]
+  [1m[35m (73.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 18:46:52 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ZombiesController#index as HTML
+  [1m[35mZombie Load (1.0ms)[0m  SELECT "zombies".* FROM "zombies"
+  Rendered zombies/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 57ms (Views: 49.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 18:46:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 18:46:52 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 18:46:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 18:46:52 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 18:46:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 18:46:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 18:46:52 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 18:46:53 -0500
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 18:46:56 -0500
+Processing by ZombiesController#index as HTML
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT "zombies".* FROM "zombies"[0m
+  Rendered zombies/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 42ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 18:46:56 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 18:46:56 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 18:46:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 18:46:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 18:46:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 18:46:56 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 18:46:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 18:46:56 -0500
+
+
+Started GET "/zombies/1/edit" for 127.0.0.1 at 2015-04-12 18:47:00 -0500
+Processing by ZombiesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mZombie Load (1.0ms)[0m  SELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered zombies/_form.html.erb (0.0ms)
+  Rendered zombies/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/zombies/1" for 127.0.0.1 at 2015-04-12 18:47:03 -0500
+Processing by ZombiesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BOD+xV914iltr/NHR9SqjbSMT+2dEkhcco3U6k87iJo=", "zombie"=>{"name"=>"cece", "bio"=>"super cool", "age"=>"28"}, "commit"=>"Update Zombie", "id"=>"1"}
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/zombies/1
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/zombies/1" for 127.0.0.1 at 2015-04-12 18:47:03 -0500
+Processing by ZombiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mZombie Load (0.0ms)[0m  SELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered zombies/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 18:47:03 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 18:47:03 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 18:47:03 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 18:47:03 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 18:47:03 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 18:47:03 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 18:47:03 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 18:47:03 -0500
+
+
+Started GET "/zombies/1" for 127.0.0.1 at 2015-04-12 18:47:06 -0500
+Processing by ZombiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mZombie Load (1.0ms)[0m  [1mSELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered zombies/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 42ms (Views: 40.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 18:47:06 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 18:47:06 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 18:47:06 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 18:47:06 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 18:47:06 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 18:47:06 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 18:47:06 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 18:47:06 -0500
+
+
+Started GET "/zombies/1" for 127.0.0.1 at 2015-04-12 18:47:07 -0500
+Processing by ZombiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mZombie Load (0.0ms)[0m  SELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered zombies/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 18:47:07 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 18:47:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 18:47:07 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 18:47:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 18:47:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 18:47:07 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 18:47:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 18:47:07 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/zombies/" for 127.0.0.1 at 2015-04-12 18:47:35 -0500
+Processing by ZombiesController#index as HTML
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT "zombies".* FROM "zombies"[0m
+  Rendered zombies/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 18:47:35 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 18:47:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 18:47:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 18:47:35 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 18:47:35 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 18:47:35 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 18:47:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 18:47:35 -0500
+
+
+Started GET "/zombies/new" for 127.0.0.1 at 2015-04-12 18:47:38 -0500
+Processing by ZombiesController#new as HTML
+  Rendered zombies/_form.html.erb (0.0ms)
+  Rendered zombies/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 47ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 18:47:40 -0500
+Processing by ZombiesController#index as HTML
+  [1m[35mZombie Load (0.0ms)[0m  SELECT "zombies".* FROM "zombies"
+  Rendered zombies/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 32ms (Views: 32.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 19:42:29 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ZombiesController#index as HTML
+  [1m[35mZombie Load (0.0ms)[0m  SELECT "zombies".* FROM "zombies"
+  Rendered zombies/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 117ms (Views: 103.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 19:42:29 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 19:42:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 19:42:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 19:42:29 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 19:42:29 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 19:42:29 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 19:42:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 19:42:29 -0500
+
+
+Started GET "/zombies/new" for 127.0.0.1 at 2015-04-12 19:42:39 -0500
+Processing by ZombiesController#new as HTML
+  Rendered zombies/_form.html.erb (31.3ms)
+  Rendered zombies/new.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 78ms (Views: 78.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 19:42:42 -0500
+Processing by ZombiesController#index as HTML
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT "zombies".* FROM "zombies"[0m
+  Rendered zombies/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 32ms (Views: 32.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/zombies/2/edit" for 127.0.0.1 at 2015-04-12 19:42:45 -0500
+Processing by ZombiesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mZombie Load (0.0ms)[0m  SELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered zombies/_form.html.erb (0.0ms)
+  Rendered zombies/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 48ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/zombies/2" for 127.0.0.1 at 2015-04-12 19:42:50 -0500
+Processing by ZombiesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BOD+xV914iltr/NHR9SqjbSMT+2dEkhcco3U6k87iJo=", "zombie"=>{"name"=>"mike", "bio"=>"stuff", "age"=>"33"}, "commit"=>"Update Zombie", "id"=>"2"}
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "zombies" SET "bio" = ?, "updated_at" = ? WHERE "zombies"."id" = 2[0m  [["bio", "stuff"], ["updated_at", "2015-04-13 00:42:50.205101"]]
+  [1m[35m (157.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/zombies/2
+Completed 302 Found in 169ms (ActiveRecord: 158.3ms)
+
+
+Started GET "/zombies/2" for 127.0.0.1 at 2015-04-12 19:42:50 -0500
+Processing by ZombiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered zombies/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 19:42:50 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 19:42:50 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 19:42:50 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 19:42:50 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 19:42:50 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 19:42:50 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 19:42:50 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 19:42:50 -0500
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 19:42:58 -0500
+Processing by ZombiesController#index as HTML
+  [1m[35mZombie Load (0.0ms)[0m  SELECT "zombies".* FROM "zombies"
+  Rendered zombies/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 47ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 19:44:02 -0500
+Processing by ZombiesController#index as HTML
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT "zombies".* FROM "zombies"[0m
+  Rendered zombies/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 19:44:02 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 19:44:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 19:44:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 19:44:02 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 19:44:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 19:44:02 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 19:44:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 19:44:02 -0500
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 19:44:05 -0500
+Processing by ZombiesController#index as HTML
+  [1m[35mZombie Load (0.0ms)[0m  SELECT "zombies".* FROM "zombies"
+  Rendered zombies/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 42ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 19:44:05 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 19:44:05 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 19:44:05 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 19:44:05 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 19:44:05 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 19:44:05 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 19:44:05 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 19:44:05 -0500
+
+
+Started GET "/zombies/2/edit" for 127.0.0.1 at 2015-04-12 19:44:07 -0500
+Processing by ZombiesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered zombies/_form.html.erb (0.0ms)
+  Rendered zombies/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 20:59:19 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ZombiesController#index as HTML
+  [1m[35mZombie Load (0.0ms)[0m  SELECT "zombies".* FROM "zombies"
+  Rendered zombies/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 1080ms (Views: 1056.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 20:59:20 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 20:59:20 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 20:59:20 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 20:59:20 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 20:59:20 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 20:59:20 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 20:59:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 20:59:20 -0500
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 20:59:23 -0500
+Processing by ZombiesController#index as HTML
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT "zombies".* FROM "zombies"[0m
+  Rendered zombies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 20:59:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 20:59:23 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 20:59:23 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 20:59:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 20:59:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 20:59:23 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 20:59:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 20:59:23 -0500
+
+
+Started GET "/zombies/1/edit" for 127.0.0.1 at 2015-04-12 21:00:27 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ZombiesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mZombie Load (0.0ms)[0m  SELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered zombies/_form.html.erb (106.2ms)
+  Rendered zombies/edit.html.erb within layouts/application (161.2ms)
+Completed 200 OK in 275ms (Views: 250.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 21:00:28 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 21:00:28 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 21:00:28 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 21:00:28 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 21:00:28 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 21:00:28 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 21:00:28 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 21:00:28 -0500
+
+
+Started GET "/zombies/" for 127.0.0.1 at 2015-04-12 21:00:37 -0500
+Processing by ZombiesController#index as HTML
+  [1m[36mZombie Load (1.0ms)[0m  [1mSELECT "zombies".* FROM "zombies"[0m
+  Rendered zombies/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-12 21:00:48 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/railties-4.1.8/lib/rails/templates/rails/welcome/index.html.erb (1.0ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/zombies/" for 127.0.0.1 at 2015-04-12 21:18:36 -0500
+Processing by ZombiesController#index as HTML
+  [1m[35mZombie Load (0.0ms)[0m  SELECT "zombies".* FROM "zombies"
+  Rendered zombies/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 50ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 21:18:36 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 21:18:36 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 21:18:36 -0500
+
+
+Started GET "/zombies/" for 127.0.0.1 at 2015-04-12 21:18:38 -0500
+Processing by ZombiesController#index as HTML
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT "zombies".* FROM "zombies"[0m
+  Rendered zombies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 42ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 21:18:39 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 21:18:39 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 21:18:39 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 21:18:39 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 21:18:39 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 21:18:39 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 21:18:39 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 21:18:39 -0500
+
+
+Started GET "/zombies/" for 127.0.0.1 at 2015-04-12 21:18:40 -0500
+Processing by ZombiesController#index as HTML
+  [1m[35mZombie Load (0.0ms)[0m  SELECT "zombies".* FROM "zombies"
+  Rendered zombies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 21:18:41 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 21:18:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 21:18:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 21:18:41 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 21:18:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 21:18:41 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 21:18:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 21:18:41 -0500
+
+
+Started GET "/zombies/" for 127.0.0.1 at 2015-04-12 21:19:09 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ZombiesController#index as HTML
+  [1m[35mZombie Load (0.0ms)[0m  SELECT "zombies".* FROM "zombies"
+  Rendered zombies/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 109ms (Views: 94.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 21:19:10 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 21:19:10 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 21:19:10 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 21:19:10 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 21:19:10 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 21:19:10 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 21:19:10 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 21:19:10 -0500
+
+
+Started GET "/zombies/" for 127.0.0.1 at 2015-04-12 21:19:13 -0500
+Processing by ZombiesController#index as HTML
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT "zombies".* FROM "zombies"[0m
+  Rendered zombies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 42ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 21:19:13 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 21:19:13 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 21:19:13 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 21:19:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 21:19:13 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 21:19:13 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 21:19:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 21:19:13 -0500
+
+
+Started GET "/zombies/" for 127.0.0.1 at 2015-04-12 21:19:14 -0500
+Processing by ZombiesController#index as HTML
+  [1m[35mZombie Load (0.0ms)[0m  SELECT "zombies".* FROM "zombies"
+  Rendered zombies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 21:19:14 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 21:19:14 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 21:19:14 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 21:19:14 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 21:19:14 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 21:19:14 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 21:19:14 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 21:19:14 -0500
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 21:20:07 -0500
+Processing by ZombiesController#index as HTML
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT "zombies".* FROM "zombies"[0m
+  Rendered zombies/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 21:20:07 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 21:20:07 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 21:20:07 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 21:20:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 21:20:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 21:20:07 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 21:20:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 21:20:07 -0500
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 21:24:41 -0500
+Processing by ZombiesController#index as HTML
+  [1m[35mZombie Load (0.0ms)[0m  SELECT "zombies".* FROM "zombies"
+  Rendered zombies/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 43ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 21:24:41 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 21:24:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 21:24:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 21:24:41 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 21:24:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 21:24:41 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 21:24:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 21:24:41 -0500
+
+
+Started GET "/zombies/1/edit" for 127.0.0.1 at 2015-04-12 21:24:46 -0500
+Processing by ZombiesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mZombie Load (1.0ms)[0m  [1mSELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered zombies/_form.html.erb (92.0ms)
+  Rendered zombies/edit.html.erb within layouts/application (96.1ms)
+Completed 500 Internal Server Error in 101ms
+
+ActionView::Template::Error (undefined method `boolean' for #<ActionView::Helpers::FormBuilder:0x4915bc0>):
+    29:     </div>
+    30:     <div class="field">
+    31:       <%= f.label :rotting %><br>
+    32:       <%= f.boolean :rotting %>
+    33:     </div>
+    34:   <div class="actions">
+    35:     <%= f.submit %>
+  app/views/zombies/_form.html.erb:32:in `block in _app_views_zombies__form_html_erb___487516976_38578452'
+  app/views/zombies/_form.html.erb:1:in `_app_views_zombies__form_html_erb___487516976_38578452'
+  app/views/zombies/edit.html.erb:3:in `_app_views_zombies_edit_html_erb___159857251_39007836'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.0ms)
+
+
+Started GET "/zombies/1/edit" for 127.0.0.1 at 2015-04-12 21:24:47 -0500
+Processing by ZombiesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mZombie Load (0.0ms)[0m  SELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered zombies/_form.html.erb (12.0ms)
+  Rendered zombies/edit.html.erb within layouts/application (14.0ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (undefined method `boolean' for #<ActionView::Helpers::FormBuilder:0x5f571a8>):
+    29:     </div>
+    30:     <div class="field">
+    31:       <%= f.label :rotting %><br>
+    32:       <%= f.boolean :rotting %>
+    33:     </div>
+    34:   <div class="actions">
+    35:     <%= f.submit %>
+  app/views/zombies/_form.html.erb:32:in `block in _app_views_zombies__form_html_erb___487516976_50017908'
+  app/views/zombies/_form.html.erb:1:in `_app_views_zombies__form_html_erb___487516976_50017908'
+  app/views/zombies/edit.html.erb:3:in `_app_views_zombies_edit_html_erb___159857251_50051904'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.0ms)
+
+
+Started GET "/zombies/1/edit" for 127.0.0.1 at 2015-04-12 21:26:45 -0500
+Processing by ZombiesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered zombies/_form.html.erb (61.1ms)
+  Rendered zombies/edit.html.erb within layouts/application (63.1ms)
+Completed 200 OK in 106ms (Views: 104.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 21:26:45 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 21:26:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 21:26:45 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 21:26:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 21:26:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 21:26:45 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 21:26:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 21:26:45 -0500
+
+
+Started PATCH "/zombies/1" for 127.0.0.1 at 2015-04-12 21:27:06 -0500
+Processing by ZombiesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uNtpl0O5V/DRTf0BxARoCtjfdIsVVl+BXLGdG3TAgXc=", "zombie"=>{"name"=>"cece", "bio"=>"super cool", "age"=>"28", "email"=>"cece@example.com", "rotting"=>"1"}, "commit"=>"Update Zombie", "id"=>"1"}
+  [1m[35mZombie Load (0.0ms)[0m  SELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1  [["id", 1]]
+Unpermitted parameters: email, rotting
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/zombies/1
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/zombies/1" for 127.0.0.1 at 2015-04-12 21:27:06 -0500
+Processing by ZombiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered zombies/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 21:27:06 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 21:27:06 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 21:27:06 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 21:27:06 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 21:27:06 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 21:27:06 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 21:27:06 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 21:27:06 -0500
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 21:27:17 -0500
+Processing by ZombiesController#index as HTML
+  [1m[35mZombie Load (0.0ms)[0m  SELECT "zombies".* FROM "zombies"
+  Rendered zombies/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 40ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/zombies/2/edit" for 127.0.0.1 at 2015-04-12 21:27:27 -0500
+Processing by ZombiesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered zombies/_form.html.erb (3.0ms)
+  Rendered zombies/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/zombies/_form" for 127.0.0.1 at 2015-04-12 21:30:02 -0500
+Processing by ZombiesController#show as HTML
+  Parameters: {"id"=>"_form"}
+  [1m[35mZombie Load (0.0ms)[0m  SELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Zombie with 'id'=_form):
+  app/controllers/zombies_controller.rb:67:in `set_zombie'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.0ms)
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 21:32:55 -0500
+Processing by ZombiesController#index as HTML
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT "zombies".* FROM "zombies"[0m
+  Rendered zombies/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 52ms (Views: 48.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 21:32:55 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 21:32:55 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 21:32:55 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 21:32:55 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 21:32:55 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 21:32:55 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 21:32:55 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 21:32:55 -0500
+
+
+Started GET "/zombies/1/edit" for 127.0.0.1 at 2015-04-12 21:32:59 -0500
+Processing by ZombiesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mZombie Load (1.0ms)[0m  SELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered zombies/_form.html.erb (2.0ms)
+  Rendered zombies/edit.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/zombies/1" for 127.0.0.1 at 2015-04-12 21:33:08 -0500
+Processing by ZombiesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uNtpl0O5V/DRTf0BxARoCtjfdIsVVl+BXLGdG3TAgXc=", "zombie"=>{"name"=>"cece", "bio"=>"super cool", "age"=>"28", "email"=>"cece@example.com", "rotting"=>"1"}, "commit"=>"Update Zombie", "id"=>"1"}
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "zombies" SET "email" = ?, "rotting" = ?, "updated_at" = ? WHERE "zombies"."id" = 1[0m  [["email", "cece@example.com"], ["rotting", "t"], ["updated_at", "2015-04-13 02:33:08.822864"]]
+  [1m[35m (140.3ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/zombies/1
+Completed 302 Found in 192ms (ActiveRecord: 141.3ms)
+
+
+Started GET "/zombies/1" for 127.0.0.1 at 2015-04-12 21:33:09 -0500
+Processing by ZombiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered zombies/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 21:33:09 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 21:33:09 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 21:33:09 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 21:33:09 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 21:33:09 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 21:33:09 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 21:33:09 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 21:33:09 -0500
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 21:33:14 -0500
+Processing by ZombiesController#index as HTML
+  [1m[35mZombie Load (0.0ms)[0m  SELECT "zombies".* FROM "zombies"
+  Rendered zombies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/zombies/2/edit" for 127.0.0.1 at 2015-04-12 21:33:20 -0500
+Processing by ZombiesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered zombies/_form.html.erb (3.0ms)
+  Rendered zombies/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/zombies/2" for 127.0.0.1 at 2015-04-12 21:33:32 -0500
+Processing by ZombiesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uNtpl0O5V/DRTf0BxARoCtjfdIsVVl+BXLGdG3TAgXc=", "zombie"=>{"name"=>"mike", "bio"=>"stuff", "age"=>"33", "email"=>"bat@poo.com", "rotting"=>"0"}, "commit"=>"Update Zombie", "id"=>"2"}
+  [1m[35mZombie Load (0.0ms)[0m  SELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "zombies" SET "email" = ?, "rotting" = ?, "updated_at" = ? WHERE "zombies"."id" = 2  [["email", "bat@poo.com"], ["rotting", "f"], ["updated_at", "2015-04-13 02:33:32.777236"]]
+  [1m[36m (183.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/zombies/2
+Completed 302 Found in 188ms (ActiveRecord: 184.5ms)
+
+
+Started GET "/zombies/2" for 127.0.0.1 at 2015-04-12 21:33:32 -0500
+Processing by ZombiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mZombie Load (0.0ms)[0m  SELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered zombies/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 21:33:33 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 21:33:33 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 21:33:33 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 21:33:33 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 21:33:33 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 21:33:33 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 21:33:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 21:33:33 -0500
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 21:33:40 -0500
+Processing by ZombiesController#index as HTML
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT "zombies".* FROM "zombies"[0m
+  Rendered zombies/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 39ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/zombies/1" for 127.0.0.1 at 2015-04-12 21:34:47 -0500
+Processing by ZombiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mZombie Load (0.0ms)[0m  SELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered zombies/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/zombies/new" for 127.0.0.1 at 2015-04-12 21:34:52 -0500
+Processing by ZombiesController#new as HTML
+  Rendered zombies/_form.html.erb (2.0ms)
+  Rendered zombies/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/zombies" for 127.0.0.1 at 2015-04-12 21:35:23 -0500
+Processing by ZombiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uNtpl0O5V/DRTf0BxARoCtjfdIsVVl+BXLGdG3TAgXc=", "zombie"=>{"name"=>"Gabe", "bio"=>"really twisted", "age"=>"56", "email"=>"oldboy@sales.com", "rotting"=>"1"}, "commit"=>"Create Zombie"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "zombies" ("age", "bio", "created_at", "email", "name", "rotting", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["age", 56], ["bio", "really twisted"], ["created_at", "2015-04-13 02:35:23.048199"], ["email", "oldboy@sales.com"], ["name", "Gabe"], ["rotting", "t"], ["updated_at", "2015-04-13 02:35:23.048199"]]
+  [1m[36m (211.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/zombies/3
+Completed 302 Found in 216ms (ActiveRecord: 212.4ms)
+
+
+Started GET "/zombies/3" for 127.0.0.1 at 2015-04-12 21:35:23 -0500
+Processing by ZombiesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mZombie Load (0.0ms)[0m  SELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered zombies/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 57ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 21:35:23 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 21:35:23 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 21:35:23 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 21:35:23 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 21:35:23 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 21:35:23 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 21:35:23 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 21:35:23 -0500
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 21:35:25 -0500
+Processing by ZombiesController#index as HTML
+  [1m[36mZombie Load (1.0ms)[0m  [1mSELECT "zombies".* FROM "zombies"[0m
+  Rendered zombies/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/zombies/new" for 127.0.0.1 at 2015-04-12 21:35:42 -0500
+Processing by ZombiesController#new as HTML
+  Rendered zombies/_form.html.erb (2.0ms)
+  Rendered zombies/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/zombies" for 127.0.0.1 at 2015-04-12 21:36:02 -0500
+Processing by ZombiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uNtpl0O5V/DRTf0BxARoCtjfdIsVVl+BXLGdG3TAgXc=", "zombie"=>{"name"=>"zszdas", "bio"=>"asdlmas2", "age"=>"22", "email"=>"as@sdfasf.com", "rotting"=>"1"}, "commit"=>"Create Zombie"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "zombies" ("age", "bio", "created_at", "email", "name", "rotting", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["age", 22], ["bio", "asdlmas2"], ["created_at", "2015-04-13 02:36:02.485506"], ["email", "as@sdfasf.com"], ["name", "zszdas"], ["rotting", "t"], ["updated_at", "2015-04-13 02:36:02.485506"]]
+  [1m[35m (254.6ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/zombies/4
+Completed 302 Found in 261ms (ActiveRecord: 255.6ms)
+
+
+Started GET "/zombies/4" for 127.0.0.1 at 2015-04-12 21:36:02 -0500
+Processing by ZombiesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered zombies/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 21:36:02 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 21:36:02 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 21:36:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 21:36:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 21:36:02 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 21:36:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 21:36:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 21:36:02 -0500
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 21:36:04 -0500
+Processing by ZombiesController#index as HTML
+  [1m[35mZombie Load (0.0ms)[0m  SELECT "zombies".* FROM "zombies"
+  Rendered zombies/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/zombies/4" for 127.0.0.1 at 2015-04-12 21:36:08 -0500
+Processing by ZombiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uNtpl0O5V/DRTf0BxARoCtjfdIsVVl+BXLGdG3TAgXc=", "id"=>"4"}
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "zombies" WHERE "zombies"."id" = ?[0m  [["id", 4]]
+  [1m[35m (137.2ms)[0m  commit transaction
+Redirected to http://127.0.0.1:3000/zombies
+Completed 302 Found in 140ms (ActiveRecord: 138.2ms)
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 21:36:08 -0500
+Processing by ZombiesController#index as HTML
+  [1m[36mZombie Load (0.0ms)[0m  [1mSELECT "zombies".* FROM "zombies"[0m
+  Rendered zombies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 21:36:08 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 21:36:08 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 21:36:08 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 21:36:08 -0500
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 21:36:08 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 21:36:08 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 21:36:08 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 21:36:08 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateBrains (20150413032806)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "brains" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "zombie_id" integer, "status" varchar(255), "flavor" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mCREATE  INDEX "index_brains_on_zombie_id" ON "brains" ("zombie_id")[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150413032806"]]
+  [1m[36m (249.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_brains_on_zombie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_brains_on_zombie_id' AND type='index'
+[0m
+  [1m[36mZombie Load (1.0ms)[0m  [1mSELECT  "zombies".* FROM "zombies"   ORDER BY "zombies"."id" DESC LIMIT 1[0m
+  [1m[35mZombie Load (1.0ms)[0m  SELECT  "zombies".* FROM "zombies"   ORDER BY "zombies"."id" DESC LIMIT 1
+
+
+Started GET "/zombies" for 127.0.0.1 at 2015-04-12 23:14:57 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ZombiesController#index as HTML
+  [1m[35mZombie Load (0.0ms)[0m  SELECT "zombies".* FROM "zombies"
+  Rendered zombies/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 1324ms (Views: 1299.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/zombies.css?body=1" for 127.0.0.1 at 2015-04-12 23:14:59 -0500
+
+
+Started GET "/assets/brain.css?body=1" for 127.0.0.1 at 2015-04-12 23:14:59 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-04-12 23:14:59 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-04-12 23:14:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-04-12 23:14:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-04-12 23:14:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-04-12 23:14:59 -0500
+
+
+Started GET "/assets/brain.js?body=1" for 127.0.0.1 at 2015-04-12 23:14:59 -0500
+
+
+Started GET "/assets/zombies.js?body=1" for 127.0.0.1 at 2015-04-12 23:14:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-04-12 23:14:59 -0500
+
+
+Started GET "/zombies/2" for 127.0.0.1 at 2015-04-12 23:15:03 -0500
+Processing by ZombiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mZombie Load (1.0ms)[0m  [1mSELECT  "zombies".* FROM "zombies"  WHERE "zombies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered zombies/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 47ms (Views: 45.2ms | ActiveRecord: 1.0ms)
