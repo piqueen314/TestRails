@@ -1,0 +1,2 @@
+class RottingZombiesController
+end
