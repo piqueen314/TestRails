@@ -31,3 +31,27 @@
 <br>
 
 <%= link_to 'New Zombie', new_zombie_path %>
+<br>
+<br>
+<br>
+<h2>Brain Flavors </h2>
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Flavor</th>
+    <th colspan="2"></th>
+  </tr>
+  </thead>
+
+    <tbody>
+        <% @zombies.each do |zombie| %>
+            <tr>
+              <% if zombie.brain %>
+                <td><%= zombie.name %></td>
+                <td><%= zombie.brain.flavor %></td>
+              <% end %>
+            </tr>
+        <% end %>
+    </tbody>
+</table>

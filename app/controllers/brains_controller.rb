@@ -1,0 +1,3 @@
+class BrainsController
+
+end
